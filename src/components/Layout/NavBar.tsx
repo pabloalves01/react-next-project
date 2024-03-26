@@ -1,26 +1,48 @@
-dddt default function NavBar() {
+import { HiOutlineTruck } from "react-icons/hi";
+import { IoMdMenu } from "react-icons/io";
+import { MdOutlineShoppingCart } from "react-icons/md";
+
+export default function NavBar() {
     return (
-        <div className="bg-black border-b border-zinc-800/50 flex justify-center">
-            <div className="w-full max-w-6xl">
-                <div className="px-4 flex justify-between items-center py-1">
-                    <div className="font-semibold">Logo</div>
-                    <ul className="hidden md:block md:flex space-x-6 font-semibold text-sm text-gray-400">
-                        <li className="cursor-pointer hover:text-gray-200">Sobre</li>
-                        <li className="cursor-pointer hover:text-gray-200">Blog</li>
-                        <li className="cursor-pointer hover:text-gray-200">Lojas</li>
-                        <li className="cursor-pointer hover:text-gray-200">Customize</li>
-                        <li className="cursor-pointer hover:text-gray-200">Dashboard</li>
-                        <li className="cursor-pointer hover:text-gray-200">Ajuda</li>
-                        <li className="cursor-pointer hover:text-gray-200">Documentos</li>
-                    </ul>
-                    <div>
-                        <ul className="flex items-center space-x-6 font-semibold text-sm text-gray-300">
-                            <li className="cursor-pointer hover:text-gray-200">Sign in</li>
-                            <button className="bg-white rounded-full text-black font-semibold text-sm py-2 px-5 my-1.5">Get Started</button>
+        <div>
+            <div className="md:flex justify-center py-2 bg-red-900 text-sm font-semibold">
+                Utilize o cupom "PRIMEIRACOMPRA" e receba 5% de desconto em sua primeira compra!
+            </div>
+            <div className="bg-white flex justify-center items-center">
+                <div className="w-full max-w-6xl">
+                    <div className="px-4 flex items-center gap-10 pt-8">
+                        <img src="/img/logo/train-sports.png" alt="" style={{ width: '200px' }} />
+                        <div className="md:flex-grow">
+                            <input className="py-2 px-4 w-full rounded-full border border-gray-400" type="text" placeholder="O que você está buscando?" />
+                        </div>
+
+                        <div>
+                            <ul className="flex items-center space-x-6 font-semibold text-sm text-gray-300">
+                                <li className="cursor-pointer text-black">Entrar</li>
+                                <button className="bg-red-900  rounded-full text-white font-semibold text-sm py-2 px-5 my-1.5">
+                                    Cadastrar
+                                </button>
+                                <button className="flex gap-2 text-black"><MdOutlineShoppingCart size={24} /> Carrinho
+                                </button>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="flex justify-between items-center px-4 py-8">
+                        <div className="flex items-center gap-2 text-sm text-black">
+                            <HiOutlineTruck size={18} />
+                            <span><span className="font-bold">Frete grátis</span> para <span className="font-bold">Cricíuma, SC</span> e região</span>
+                        </div>
+                        <ul className="hidden md:block md:flex space-x-6 font-semibold text-sm text-black">
+                            <li className="cursor-pointer hover:text-gray-200">Mantos Masculinos</li>
+                            <li className="cursor-pointer hover:text-gray-200">Mantos Femininos</li>
+                            <li className="cursor-pointer hover:text-gray-200">Mantos Retrô</li>
+                            <li className="cursor-pointer hover:text-gray-200">Conjuntos Infantis</li>
+                            <li className="cursor-pointer hover:text-gray-200">Perguntas Frequentes</li>
+                            <li className="cursor-pointer hover:text-gray-200">Quem somos</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }
