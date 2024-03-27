@@ -13,7 +13,8 @@ export default function Home() {
             {/* <div className="bg-red-800 w-full py-1"></div> */}
             <hr />
             <InfoLoja />
-            <hr />
+            <div className="bg-red-800 w-full py-1"></div>
+            <div className="bg-white h-96">.</div>
         </div>
 
 

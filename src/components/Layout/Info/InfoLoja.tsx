@@ -7,7 +7,8 @@ import { BsCartCheck } from "react-icons/bs";
 export default function InfoLoja() {
     return (
         <div className="flex flex-row justify-center bg-white text-black">
-            <div className="max-w-6xl w-full gap-5 p-10 flex flex-col">
+
+            <div className="max-w-6xl w-full gap-5 p-10 flex flex-col md:flex md:flex-row">
                 <div className="flex w-full gap-4">
                     <RiSecurePaymentLine   size={48} />
                     <div className="flex flex-col w-full">
