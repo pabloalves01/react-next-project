@@ -1,8 +1,8 @@
 export default function CardProduto() {
     return (
-        <div className="w-full h-96 border border-gray-300 hover:shadow-md  rounded-lg flex flex-col p-4 relative transition-transform transition-duration-500 hover:-translate-y-2">
+        <div className="w-full h-96 border border-gray-300 hover:shadow-md  rounded-lg flex flex-col p-4 relative transition-transform transition-duration-500 hover:-translate-y-2 cursor-pointer">
 
-            <div className="border rounded-lg border-gray-300 w-full h-64 text-white flex items-center justify-center">
+            <div className="bg-gray-100 border rounded-lg border-gray-300 w-full h-64 text-gray-400 flex items-center justify-center">
                 IMAGEM AQUI
             </div>
             <div className="w-full py-2 text-base">
